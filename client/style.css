@@ -2,10 +2,22 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
   position: relative;
+  background: #E8E8E8;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 img {

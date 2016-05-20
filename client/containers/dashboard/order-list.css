@@ -1,0 +1,34 @@
+.root {
+  padding: 1em;
+}
+
+.wrapper {
+
+}
+
+.box {
+  padding: 1em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.boxHeader {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.boxHeader > div:first-child {
+  flex: 1;
+}
+
+.controls {
+  overflow: hidden;
+}
+
+.controls > * {
+  float: right;
+}
+
+.status {
+  color: orange;
+}

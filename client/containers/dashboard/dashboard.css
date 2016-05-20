@@ -1,0 +1,63 @@
+.root {
+  composes: fill from '../../components/layout/layout.css';
+  display: flex;
+}
+
+.left {
+  width: 260px;
+  box-shadow: 3px 3px #c7c7c7;
+  background: #fff;
+  margin-top: 10px;
+}
+
+.content {
+  flex: 1;
+  background: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.accountSpot {
+  padding: 0.5em;
+  composes: flex from '../../components/layout/layout.css';
+}
+
+.accountSpot > div:first-child {
+  margin-right: 10px;
+}
+
+.icon {
+  font-size: 3em !important;
+}
+
+.countyList {
+  margin-top: 50px;
+  padding: 0.5em;
+}
+
+.countyList ul {
+  padding: 1em;
+}
+
+.countyList ul li {
+  margin-bottom: 5px;
+}
+
+.header {
+  composes: flex from '../../components/layout/layout.css';
+}
+
+.header > div:first-child {
+  margin-right: 10px;
+}
+
+.toolbar {
+  padding: 0.5em;
+  border-bottom: 5px solid #2D608C;
+  text-align: center;
+}
+
+.toolbar h2 {
+  margin: 0;
+}
