@@ -1,5 +1,5 @@
 .root {
-
+  composes: fill from '../layout/layout.css';
 }
 
 .enter {

@@ -32,7 +32,7 @@ class DashboardContainer extends Component {
           <CountyList />
 
           <div className={styles.leftControls}>
-            <Link to="/documents" className="btn btn-default">Documents</Link>
+            <Link to="/documents" className="btn btn-default"> <span className="glyphicon glyphicon-search" aria-hidden="true"></span> Documents</Link>
           </div>
 
         </div>

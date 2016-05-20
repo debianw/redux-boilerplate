@@ -23,6 +23,7 @@ class Viewport extends Component {
     return (
       <ReactCSSTransitionGroup
         id="viewport"
+        className={styles.root}
         component="div"
         transitionName={{
           enter: styles.enter,
