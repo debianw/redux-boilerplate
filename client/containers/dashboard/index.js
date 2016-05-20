@@ -8,6 +8,7 @@ import classnames from 'classnames';
 import AccountSpot from './account-spot';
 import CountyList from './county-list';
 import OrderList from './order-list';
+import Toolbar from '../../components/toolbar';
 
 /**
  *
@@ -33,9 +34,7 @@ class DashboardContainer extends Component {
 
         <div className={styles.content}>
 
-          <div className={styles.toolbar}>
-            <h2> My Order List </h2>
-          </div>
+          <Toolbar title="My Order List" />
 
           <OrderList />
 

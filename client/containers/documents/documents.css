@@ -1,0 +1,25 @@
+.root {
+  composes: panelContainer from '../../components/layout/layout.css';
+}
+
+.content {
+  padding: 1em;
+}
+
+.searchForm {
+  margin: 20px auto;
+  width: 400px;
+}
+
+.searchFormRow {
+  composes: flex from '../../components/layout/layout.css';
+}
+
+.searchFormRow > * {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.searchFormRow > div:first-child {
+  flex: 1;
+}

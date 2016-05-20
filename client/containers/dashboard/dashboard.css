@@ -6,8 +6,8 @@
 .left {
   width: 260px;
   box-shadow: 3px 3px #c7c7c7;
-  background: #fff;
-  margin-top: 10px;
+  composes: panelContainer from '../../components/layout/layout.css';
+  margin-right: 0;
 }
 
 .content {
@@ -50,14 +50,4 @@
 
 .header > div:first-child {
   margin-right: 10px;
-}
-
-.toolbar {
-  padding: 0.5em;
-  border-bottom: 5px solid #2D608C;
-  text-align: center;
-}
-
-.toolbar h2 {
-  margin: 0;
 }
