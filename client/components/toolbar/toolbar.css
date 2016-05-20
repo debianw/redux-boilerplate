@@ -1,9 +1,11 @@
 .root {
+  composes: flex from '../layout/layout.css';
   padding: 0.5em;
   border-bottom: 5px solid #2D608C;
-  text-align: center;
 }
 
 .root h2 {
   margin: 0;
+  text-align: center;
+  flex: 1;
 }

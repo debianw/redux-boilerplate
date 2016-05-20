@@ -9,6 +9,7 @@ import AccountSpot from './account-spot';
 import CountyList from './county-list';
 import OrderList from './order-list';
 import Toolbar from '../../components/toolbar';
+import { Link } from 'react-router';
 
 /**
  *
@@ -29,6 +30,10 @@ class DashboardContainer extends Component {
           <AccountSpot />
 
           <CountyList />
+
+          <div className={styles.leftControls}>
+            <Link to="/documents" className="btn btn-default">Documents</Link>
+          </div>
 
         </div>
 

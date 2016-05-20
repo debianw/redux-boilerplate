@@ -20,7 +20,7 @@ class Documents extends Component {
   render() {
     return (
       <div className={styles.root}>
-        <Toolbar title="Documents" />
+        <Toolbar title="Documents" back="/dashboard" />
 
         <div className={styles.content}>
           <table className="table table-hover">

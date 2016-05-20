@@ -4,6 +4,7 @@
 
 import React from 'react';
 import classnames from 'classnames';
+import { Link } from 'react-router';
 import styles from './dashboard.css';
 
 /**
@@ -19,7 +20,7 @@ export default (props) => {
 
       <div>
         <h4> My Account </h4>
-        Mike Watkins ( Admin )
+        Mike Watkins ( <Link to="/"> Logout </Link> )
       </div>
     </div>
   );

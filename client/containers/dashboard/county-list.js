@@ -5,6 +5,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import styles from './dashboard.css';
+import { Link } from 'react-router';
 
 /**
  *
@@ -24,9 +25,9 @@ export default (props) => {
       </div>
 
       <ul>
-        <li> <a href="#"> Appling (3) </a> </li>
-        <li> <a href="#"> Baker (1) </a> </li>
-        <li> <a href="#"> Borrow (1) </a> </li>
+        <li> <Link to="/dashboard"> Appling (3) </Link> </li>
+        <li> <Link to="/dashboard"> Baker (1) </Link> </li>
+        <li> <Link to="/dashboard"> Borrow (1) </Link> </li>
       </ul>
 
     </div>
