@@ -20,7 +20,7 @@ export default (props) => {
         { back && <Link to={back}> <span className="glyphicon glyphicon-menu-left" aria-hidden="true"></span> Back </Link> }
       </div>
 
-      <h2> {title} </h2>
+      <h2> {title || "Set a Title ..."} </h2>
     </div>
   );
 }

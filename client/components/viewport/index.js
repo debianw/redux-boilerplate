@@ -31,8 +31,8 @@ class Viewport extends Component {
           leave: styles.leave,
           leaveActive: styles.leaveActive
         }}
-        transitionEnterTimeout={500}
-        transitionLeaveTimeout={500}>
+        transitionEnterTimeout={300}
+        transitionLeaveTimeout={300}>
 
         {React.cloneElement(this.props.children, {
           key

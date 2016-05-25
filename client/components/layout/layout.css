@@ -10,9 +10,22 @@
   display: flex;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .panelContainer {
   background: #fff;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 10px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }

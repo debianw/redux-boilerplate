@@ -1,0 +1,31 @@
+.root {
+  composes: fill from '../layout/layout.css';
+  composes: flex from '../layout/layout.css';
+  composes: justify-center from '../layout/layout.css';
+  z-index: 999999;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+  composes: flex-column from '../layout/layout.css';
+  width: 90%;
+  margin: 20px 0;
+  background: #fff;
+}
+
+.inner {
+  flex-grow: 1;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid #ccc;
+  overflow: auto;
+  position: relative;
+}
+
+.controls {
+  padding: 1em;
+}
+
+.controls button {
+  margin-right: 10px;
+}

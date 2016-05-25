@@ -9,6 +9,8 @@ import AccountSpot from './account-spot';
 import CountyList from './county-list';
 import OrderList from './order-list';
 import Toolbar from '../../components/toolbar';
+import Modal from '../../components/modal';
+import PDFViewer from '../../components/pdf-viewer';
 import { Link } from 'react-router';
 
 /**
@@ -24,6 +26,8 @@ class DashboardContainer extends Component {
   render() {
     return (
       <div className={styles.root}>
+
+        <PDFViewer file="https://www.verifyd.com/CLServicesDev/Api.ashx?ActiveBid&orderId=1036972" />
 
         <div className={styles.left}>
 

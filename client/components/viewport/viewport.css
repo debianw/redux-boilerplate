@@ -4,7 +4,7 @@
 
 .enter {
   opacity: 0.01;
-  transition: opacity .5s ease-in;
+  transition: opacity .3s ease-in;
 }
 
 .enterActive {
@@ -13,7 +13,7 @@
 
 .leave {
   opacity: 1;
-  transition: opacity .5s ease-in;
+  transition: opacity .3s ease-in;
 }
 
 .leaveActive {
