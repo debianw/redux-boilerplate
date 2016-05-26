@@ -11,11 +11,11 @@ import styles from './modal.css';
  */
 
 export default (props) => {
-  const { title, controls } = props;
+  const { title, controls, width } = props;
 
   return (
     <div className={styles.root}>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} style={ {width: width || "90%"} }>
 
         <Toolbar title={title} />
 

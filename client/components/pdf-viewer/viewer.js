@@ -128,6 +128,7 @@ class Viewer extends Component {
       const canvasContext = canvas.getContext('2d');
       const {scale} = this.props;
       const viewport = page.getViewport(scale);
+
       canvas.height = viewport.height;
       canvas.width = viewport.width;
       page.render({canvasContext, viewport});

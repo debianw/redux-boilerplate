@@ -1,0 +1,8 @@
+/**
+ *
+ */
+
+export const ORDER_CHECKINGOUT      = "ORDER_CHECKINGOUT";
+export const ORDER_CHECKOUT         = "ORDER_CHECKOUT";
+export const ORDER_OPEN_RUNSHEET    = "ORDER_OPEN_RUNSHEET";
+export const ORDER_CLOSE_RUNSHEET   = "ORDER_CLOSE_RUNSHEET";

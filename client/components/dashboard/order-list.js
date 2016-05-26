@@ -11,6 +11,8 @@ import styles from './order-list.css';
  */
 
 export default (props) => {
+  const { openOrder } = props;
+
   return (
     <div className={styles.root}>
       <h3> Appling County: </h3>
@@ -29,7 +31,7 @@ export default (props) => {
           </div>
 
           <div className={styles.controls}>
-            <button className="btn btn-success" type="submit">CHECKIN</button>
+            <button className="btn btn-primary" type="submit" onClick={openOrder}>CHECKOUT</button>
           </div>
         </div>
 
@@ -44,7 +46,7 @@ export default (props) => {
           </div>
 
           <div className={styles.controls}>
-            <button className="btn btn-primary" type="submit">CHECKOUT</button>
+            <button className="btn btn-primary" type="submit" onClick={openOrder}>CHECKOUT</button>
           </div>
         </div>
 
@@ -59,7 +61,7 @@ export default (props) => {
           </div>
 
           <div className={styles.controls}>
-            <button className="btn btn-primary" type="submit">CHECKOUT</button>
+            <button className="btn btn-primary" type="submit" onClick={openOrder}>CHECKOUT</button>
           </div>
         </div>
 

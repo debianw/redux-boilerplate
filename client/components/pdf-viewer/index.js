@@ -5,6 +5,7 @@
 import React, { Component } from 'react';
 import Modal from '../modal';
 import Viewer from './viewer';
+import styles from './viewer.css';
 
 class PDFViewer extends Component {
 
@@ -49,12 +50,19 @@ class PDFViewer extends Component {
     });
   }
 
+  download() {
+    const { file } = this.props;
+
+    window.open(file);
+  }
+
   /**
    *
    */
 
   getControls() {
     const { numpages, page } = this.state;
+    const { onDone, onCancel } = this.props;
 
     return (
       <div>
@@ -63,7 +71,14 @@ class PDFViewer extends Component {
 
         <span> Pages: {page} of {numpages} </span>
 
-        <button className="btn btn-primary pull-right"> Done </button>
+        <button className="btn btn-primary pull-right" onClick={onDone}> Done </button>
+
+        <button className="btn btn-danger pull-right" onClick={onCancel}> Cancel </button>
+
+        <button className="btn btn-default pull-right" onClick={this.download.bind(this)}>
+          <span className="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>
+        </button>
+
       </div>
     );
   }
@@ -90,7 +105,10 @@ class PDFViewer extends Component {
     const { file } = this.props;
 
     return (
-      <Modal title="PDF Document" controls={this.getControls()}>
+      <Modal
+        title="PDF Document"
+        width={720}
+        controls={this.getControls()}>
 
         <Viewer
           page={page}
@@ -105,22 +123,3 @@ class PDFViewer extends Component {
 
 //
 export default PDFViewer;
-
-/**
- *
- */
-
-/*export default (props) => {
-
-  return (
-    <Modal title="PDF Document">
-
-      <Viewer
-        page={1}
-        file="https://www.verifyd.com/CLServicesDev/Api.ashx?ActiveBid&orderId=1036972" />
-
-      <div>Controls</div>
-
-    </Modal>
-  );
-}*/

@@ -1,3 +1,8 @@
 .canvas {
   position: absolute;
 }
+
+.iframe {
+  height: 0;
+  display: none;
+}
